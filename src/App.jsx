@@ -14,19 +14,19 @@ import Community from './pages/Community'
 const App = () => {
   return (
     <div>
-       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/ai' element={<Layout/>}>
-          <Route index element={<Dashboard/>}/>
-          <Route path='write-article' element={<WriteArticle/>}/>
-          <Route path='blog-titles' element={<BlogTitle/>}/>
-          <Route path='generate-images' element={<GenerateImg/>}/>
-          <Route path='remove-background' element={<RemoveBg/>}/>
-          <Route path='remove-object' element={<RemoveObj/>}/>
-          <Route path='review-resume' element={<ReviewResume />}/>
-          <Route path='community' element={<Community />}/>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ai" element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="write-article" element={<WriteArticle />} />
+          <Route path="blog-titles" element={<BlogTitle />} />
+          <Route path="generate-images" element={<GenerateImg />} />
+          <Route path="remove-background" element={<RemoveBg />} />
+          <Route path="remove-object" element={<RemoveObj />} />
+          <Route path="review-resume" element={<ReviewResume />} />
+          <Route path="community" element={<Community />} />
         </Route>
-       </Routes>
+      </Routes>
     </div>
   )
 }
