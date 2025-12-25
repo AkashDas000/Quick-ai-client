@@ -15,6 +15,9 @@ const BlogTitle = () => {
 
   const [selectedCategory, setSelectedCategory] = useState("General");
 
+
+  const [input, setInput] = useState("")
+
   const onSubmitHandler = async (e) => {
     e.preventDefault()
   }
@@ -32,8 +35,8 @@ const BlogTitle = () => {
         <p className="mt-6 text-sm font-medium">Keyword</p>
 
         <input
-          // onChange={(e) => setInput(e.target.value)}
-          // value={input}
+          onChange={(e) => setInput(e.target.value)}
+          value={input}
           type="text"
           className="w-full p-2 px-3 mt-2 outline-none text-sm rounded-md border border-gray-300"
           placeholder="The future of artificial intelligence is..."
